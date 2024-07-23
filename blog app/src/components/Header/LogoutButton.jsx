@@ -12,7 +12,7 @@ const LogoutButton = () => {
             console.log(e);
         }
     }
-
+           
   return (
     <button onClick={handleLogout} className="btn btn-outline-danger">Logout</button>
   )
