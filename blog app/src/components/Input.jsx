@@ -30,5 +30,5 @@ MyInput.propTypes = {
     type: PropTypes.string,
     className: PropTypes.string,
 };
-
+ 
 export default MyInput;

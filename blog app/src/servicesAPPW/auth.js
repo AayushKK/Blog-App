@@ -25,7 +25,7 @@ export class AuthService {
             return await this.account.createEmailSession(email,password);
         }
         catch(e){
-            console.log(e);
+            console.log(e);  // use throw (e);
         }
     }
 
@@ -33,7 +33,7 @@ export class AuthService {
         try{
             return await this.account.get();
         }catch(e){
-           console.log(e);
+           console.log(e); 
         }
         return null;
     }
