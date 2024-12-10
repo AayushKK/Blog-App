@@ -1,11 +1,11 @@
 import { useDispatch } from "react-redux"
-import { BlogService } from "../../servicesAPPW/config"
-import {logout} from "../../store/authSlice"
+import authService from "../../servicesAPPW/auth"
+import { logout } from "../../store/authSlice";
 const LogoutButton = () => {
     const dispatch = useDispatch();
     const handleLogout = async () => {
         try{
-            await BlogService.logout();
+            await authService.logout();
             dispatch(logout());
         }
         catch(e){

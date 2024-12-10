@@ -1,7 +1,7 @@
 
 
 import {Link} from 'react-router-dom'
-import { BlogService } from '../servicesAPPW/config'
+import blogService from '../servicesAPPW/config'
 
 function PostCard({$id, title, featuredImage}) {
     
@@ -9,7 +9,7 @@ function PostCard({$id, title, featuredImage}) {
     <Link to={`/post/${$id}`}>
         <div className='w-full bg-gray-100 rounded-xl p-4'>
             <div className='w-full justify-center mb-4'>
-                <img src={BlogService.getFilePreview(featuredImage)} alt={title}
+                <img src={blogService.getImagePreview(featuredImage)} alt={title}
                 className='rounded-xl' />
 
             </div>
